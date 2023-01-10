@@ -1,0 +1,6 @@
+pyspark
+apache-airflow[amazon]
+requests
+flatten_json
+boto3
+botocore

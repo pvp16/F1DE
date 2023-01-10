@@ -60,6 +60,16 @@ resource "aws_instance" "f1de-server" {
   security_groups = [aws_security_group.f1de_security_group.name]
 }
 
+resource "aws_redshift_cluster" "f1de-redshift" {
+  cluster_identifier = "f1de-redshift-cluster"
+  database_name      = "f1de"
+  master_username    = "f1de"
+  master_password    = "Pvp286c1229"
+  node_type          = "dc2.large"
+  cluster_type       = "single-node"
+  
+}
+
 resource "aws_s3_bucket" "f1de-bucket" {
   bucket = "f1de-data-lake"
   acl    = "private"
