@@ -11,6 +11,9 @@ terraform/f1dekey.pem
 *.tfstate
 *.tfstate.*
 
+*:Zone.Identifier
+*:Zone.Identifier*
+
 # Crash log files
 crash.log
 crash.*.log
