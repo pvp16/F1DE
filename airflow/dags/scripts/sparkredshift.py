@@ -11,7 +11,7 @@ REDSHIFT_PASSWORD = os.getenv("REDSHIFT_PASSWORD")
 insdt = str(date.today()) 
 mnyr = str(date.today().strftime("%Y-%m"))
 s3path = "s3a://f1de-data-lake/{}/f1results.csv".format(mnyr)
-connection_string = "jdbc:redshift://f1de-redshift-cluster.crqohyu1o55l.ap-south-1.redshift.amazonaws.com:5439/f1de?user={0}&password={1}".format(REDSHIFT_USER,REDSHIFT_PASSWORD)
+connection_string = "jdbc:redshift://_.amazonaws.com:5439/f1de?user={0}&password={1}".format(REDSHIFT_USER,REDSHIFT_PASSWORD)
   
 
 
