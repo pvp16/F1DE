@@ -61,12 +61,12 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
-    AIRFLOW_CONN_AWS_DEFAULT: '{"conn_type": "aws","login": "AKIATUQDNKE5PQFF5S6X","password": "wv6Fwa2TUC2IL8Asewvdehp+1C57FBl8IbrCbFHT","region_name": "ap-south-1"}'
-    AWS_ACCESS_KEY_ID: 'AKIATUQDNKE5PQFF5S6X'
-    AWS_SECRET_ACCESS_KEY: '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'
+    AIRFLOW_CONN_AWS_DEFAULT: '{"conn_type": "aws","login": "","password": "","region_name": "ap-south-1"}'
+    AWS_ACCESS_KEY_ID: ''
+    AWS_SECRET_ACCESS_KEY: ''
     AWS_REGION: 'ap-south-1'
     REDSHIFT_USER: 'f1de'
-    REDSHIFT_PASSWORD: 'Pvp286c1229'
+    REDSHIFT_PASSWORD: ''
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
