@@ -7,7 +7,7 @@ from datetime import date
 insdt = str(date.today()) 
 mnyr = str(date.today().strftime("%Y-%m"))
 s3path = "s3a://f1de-data-lake/{}/f1results.csv".format(mnyr)
-connection_string = "jdbc:redshift://f1de-redshift-cluster.crqohyu1o55l.ap-south-1.redshift.amazonaws.com:5439/f1de?user=f1de&password=Pvp286c1229"
+connection_string = ""
 
 # COMMAND ----------
 
