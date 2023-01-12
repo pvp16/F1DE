@@ -15,8 +15,7 @@ def writes3():
     s3 = session.resource('s3')
     BUCKET = "f1de-data-lake"
 
-    s3.Bucket(BUCKET).upload_file("/opt/airflow/data/f1results.csv", key)
+    s3.Bucket(BUCKET).upload_file("./f1results.csv", key)
 
-    if os.path.isfile('/opt/airflow/data/f1results.csv'):
-        os.remove('/opt/airflow/data/f1results.csv')
+    
     

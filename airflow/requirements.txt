@@ -1,5 +1,6 @@
 pyspark
-apache-airflow[amazon]
+apache-airflow-providers-databricks
+apache-airflow[amazon,databricks]
 requests
 flatten_json
 boto3

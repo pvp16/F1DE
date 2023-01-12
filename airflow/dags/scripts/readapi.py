@@ -4,7 +4,11 @@ from flatten_json import flatten
 import time
 
 def readf1():
-    f = csv.writer(open("/opt/airflow/data/f1results.csv","a",newline=''))
+    fo = open("f1results.csv","a",newline='')
+    print(fo.name)
+    fo.seek(0,0)
+    fo.truncate(0)
+    f = csv.writer(open("f1results.csv","a",newline=''))
     f.writerow(['season','round','raceName','circuitId','circuitName','latitude','longitude','locality','country','date','driverNumber','position','positionText','points',
     'driverId','permanentNumber','code','givenName','familyName','dateOfBirth','driverNationality','constructorId','constructorName','constructorNationality','grid','laps','status',
     'millis','raceTime','fastestLapRank', 'fastestLap', 'fastestLapTime', 'units','averageSpeed'])
